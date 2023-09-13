@@ -1,0 +1,95 @@
+body {
+    background-color:#F0EFE9;
+    color: #121212;
+    font-family: Inter;
+}
+
+h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 32px */
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    color: #525252;
+    text-transform: capitalize;
+}
+
+hr {
+    border: 1px solid #BCBCBC;
+}
+
+.navbar{
+    width: 400px;
+}
+
+.nav-link{
+    color: #121212;
+}
+
+
+
+
+.sheetparent{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    
+}
+
+.sheet {
+    width: 400px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 0.21);
+}
+
+.box {
+    width: 400px;
+}
+
+#addItem_container{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+#addItembox {
+    width: 240px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid #BCBCBC;
+    padding: 1rem;
+}
+
+
+
+#addItemButton {
+    width: 42px;
+    height: 42px;
+    
+}
+
+
+input[type=checkbox] {
+    float: left;
+    margin-top: 6px;
+    margin-right: 16px;
+}
+
+input[type=checkbox]:checked+span {
+    text-decoration:line-through;
+    color:#BCBCBC;
+}
+
+span {
+    word-wrap:break-word;
+}
+

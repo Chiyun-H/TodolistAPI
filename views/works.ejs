@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+<div class="sheetparent">
+    <div class="sheet py-5" >
+        <div class="box pb-4">
+            <h1 class="todayTitle px-5"><%= locals.title%></h1>
+            <h4 class="px-5"><%= locals.day%>, <%= locals.month%>, <%= locals.date%></h4>
+        </div>
+    
+        <div class="box">
+         <form action="/works" method="POST" class="px-5 mb-4" id="addItem_container">
+           <input id="addItembox" type="text" name="newWorkItem" placeholder="Type your task here">
+           <input id="addItemButton" type="image" src="images/submitbtn.svg" onClick="document.formname.submit();">
+         </form>
+        </div>
+
+        <div class="box px-5">
+         <% newWorkItemStorage.forEach(function(newWorkItem){ %>
+            <div class="newItem my-3"><input type="checkbox" class="check-box"><span><%= newWorkItem %></span><hr></div>
+         <% }) %>
+        </div>
+    </div>
+</div>   
+    
+<%- include("partials/footer.ejs") %>
+
